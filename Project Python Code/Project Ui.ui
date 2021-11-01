@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>687</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>true</underline>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Real Estate Website Scraping</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sortingAlgoComboBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string>Merge Sort</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="modelColumn">
+    <number>0</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Merge Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Insertion Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Quick Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Selection Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bubble Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Counting Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Radix Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Shell Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bucket Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Exchange Sort</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Heap Sort</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="multiLevelSortingBtn">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>80</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Multilevel Sorting</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="findText">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>80</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt;&quot;&gt;Type the Word to Sreach&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="selectColumnComboBox">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>80</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Column</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="filterComboBox">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>80</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Filter</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>640</y>
+     <width>341</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="startScrapingBtn">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>640</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start Scraping</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="puaseScarpingBtn">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>640</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pause Scraping</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="resumeScrapingBtn">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>640</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Resume Scarping</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="dataTable">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>861</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>861</width>
+     <height>411</height>
+    </size>
+   </property>
+   <attribute name="verticalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Title</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Location</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Price</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Bedroom</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Washroom</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Company</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="sortingTime">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>580</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Time:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titleTime">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>580</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="locationTime">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>580</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="priceTime">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>580</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bedroomTime">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>580</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="washroomTime">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>580</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="companyTime">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>580</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statusTime">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>580</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
